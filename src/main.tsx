@@ -7,7 +7,6 @@ import './index.css';
 import App from './App.tsx';
 import Cech from './routes/cohomology/cech.tsx';
 import Dolbeult from './routes/cohomology/dolbeult.tsx';
-import Footer from './components/Footer.tsx';
 import Etale from './routes/cohomology/etale.tsx';
 import Relativity from './routes/physics/relativity.tsx';
 import Qft from './routes/physics/qft.tsx';
@@ -50,7 +49,10 @@ function Layout() {
         <Outlet />
       </main>
       <div className='absolute bottom-5 right-42/100'>
-        <Footer />
+        <footer>
+          <p>&copy; 2025. All rights reserved.</p>
+          <p>Contact: May add later, not sure.</p>
+      </footer>
       </div>
     </div>
   );
