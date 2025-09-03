@@ -1,10 +1,8 @@
-import { useState } from 'react';
+
 import { IoMdMoon } from 'react-icons/io';
 import { MdSunny } from 'react-icons/md';
 
 function Toggle() {
-  const [theme, setTheme] = useState('light'); 
-
 
   return (
     <div className=' '>
