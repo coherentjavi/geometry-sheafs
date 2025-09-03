@@ -1,9 +1,11 @@
 function Footer() {
   return (
-    <footer>
-      <p>&copy; 2025. All rights reserved.</p>
-      <p>Contact: may add later</p>
-    </footer>
+    <div className="flex justify-center">
+      <footer>
+        <p>&copy; 2025. All rights reserved.</p>
+        <p>Contact: May add later, not sure.</p>
+      </footer>
+    </div>
   );
 }
 

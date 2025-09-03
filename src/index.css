@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+@theme{
+    --color-primary: #1b4965;
+    --color-secondary: #cae9ff;
+    --color-dropbg: #5fa8d3;
+
+
+    --color-darkbg: #2C2C2C;
+    --color-darktext: #E4E4E4;
+    --color-darknav: #cae9ff;
+}

@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import { IoMdMoon } from 'react-icons/io';
 import { MdSunny } from 'react-icons/md';
 
 function Toggle() {
+  const [theme, setTheme] = useState('light'); 
+
+
   return (
     <div className=' '>
-      <div className='bg-gray-100 p-2 rounded-2xl'>
+      <div className='bg-gray-100 p-2 rounded-2x'>
         <button className='rounded-2xl hover:bg-gray-300 p-2'>
           <IoMdMoon />
         </button>
