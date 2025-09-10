@@ -22,7 +22,7 @@ function NavBar() {
 
     <div className='w-full flex justify-evenly items-center text-white bg-gray-800 mb-20'>
       <nav>
-        <ul className='hidden xl:flex 2xl:flex lg:flex items-center gap-10'>
+        <ul className='hidden xl:flex 2xl:flex lg:flex items-center gap-x-2.5'>
 
           <li className='p-5 hover:bg-dropbg hover:text-white cursor-pointer rounded-2xl'>
             <NavLink to='/geometry-sheafs/'>Home</NavLink>
