@@ -8,7 +8,7 @@ function SheafTheory(){
         <>
             The 3 primary resources for this section are Sheaf Theory by Tennison, Sheaves in Geometry & Logic by Maclane/Moerdijk and Categories & Sheaves by Kashiwara/Schapira.
 
-   
+            <BlockMath> test</BlockMath>
         </>
     );
 
