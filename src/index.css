@@ -10,3 +10,27 @@
     --color-darktext: #E4E4E4;
     --color-darknav: #cae9ff;
 }
+/*
+.NavLink{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.DropDownMenu{
+    float: left;
+    overflow: hidden;
+}
+*/
+
+
+
+
+/*@custom-variant{
+
+}*/

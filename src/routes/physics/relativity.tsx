@@ -8,7 +8,7 @@ function Relativity(){
         href="https://en.wikipedia.org/wiki/Gravitation_(book)">
             Gravitation
             
-        </a> {' '}is my primary resource for learning more about Relativity due it's depth in topics and math rigor. The conventions used there are the ones I'll follow. 
+        </a> is my primary resource for learning more about Relativity due it's depth in topics and math rigor. The conventions used there are the ones I'll follow. 
         </p>
     </div>
     );

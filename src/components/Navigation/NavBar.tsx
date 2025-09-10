@@ -1,35 +1,64 @@
 import { NavLink } from 'react-router';
 import { useState } from 'react';
-import { CohomologyDropDown, PhysicsDropDown } from './DropDownMenus';
+import { GoTriangleDown } from "react-icons/go";
+//import { GoTriangleRight } from "react-icons/go";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { CohomologyDropDown, PhysicsDropDown, AntDropDown, GeoDropDown} from './DropDownMenus';
 
 
 
 
 
 function NavBar() {
-  const [openSubMenu1, setOpen1] = useState(false);
-  const [openSubMenu2, setOpen2] = useState(false);
+
+
+  const [openGeo, setOpenGeo] = useState(false);
+  const [openCohomology, setOpenCohomology] = useState(false);
+  const [openPhysics, setOpenPhysics ] = useState(false);
+  const [openANT, setOpenANT] = useState(false);
+  /**/
 
   return (
-    <div className='flex justify-evenly items-center text-white bg-gray-800 marging'>
+
+    <div className='w-full flex justify-evenly items-center text-white bg-gray-800 mb-20'>
       <nav>
-        <ul className='flex space-x-2.5'>
-          <li className='p-5 hover:bg-dropbg hover:text-black'>
+        <ul className='hidden xl:flex 2xl:flex lg:flex items-center gap-10'>
+
+          <li className='p-5 hover:bg-dropbg hover:text-white cursor-pointer rounded-2xl'>
             <NavLink to='/geometry-sheafs/'>Home</NavLink>
           </li>
-          <div className='relative' onMouseLeave={()=> setOpen1(false)}>
-            <li className='p-5' onMouseEnter={()=> setOpen1(true)}>
-              <NavLink to='/geometry-sheafs/Cech'>Cohomology</NavLink>
+
+          <div className='relative hover:bg-gray-700 hover:rounded-2xl'  onMouseLeave={()=> setOpenGeo(false)}>
+             <li className='flex gap-0.5 p-5' onMouseEnter={()=> setOpenGeo(true)}>
+                Geometry & Sheaf Theory
+                <GoTriangleDown/>
             </li>
-          {openSubMenu1 ? <CohomologyDropDown /> : <></>}
+            {openGeo ? <GeoDropDown /> : <></>}
           </div>
-          <div className='relative'  onMouseLeave={()=> setOpen2(false)}>
-            <li className='p-5' onMouseEnter={()=> setOpen2(true)}>
-              <NavLink to='/geometry-sheafs/physics'>Mathematical Physics</NavLink>
+
+          <div className='relative hover:bg-gray-700 hover:rounded-2xl'  onMouseLeave={()=> setOpenANT(false)}>
+            <li className='flex gap-0.5 p-5' onMouseEnter={()=> setOpenANT(true)}>
+                Algebraic Number Theory
+                <GoTriangleDown/>
             </li>
-          {openSubMenu2 ? <PhysicsDropDown /> : <></>}
+          {openANT ? <AntDropDown /> : <></>}
+          </div>
+
+          <div className='relative hover:bg-gray-700 hover:rounded-2xl' onMouseLeave={()=> setOpenCohomology(false)}>
+            <li className='flex gap-0.5 p-5' onMouseEnter={()=> setOpenCohomology(true)}>
+                Cohomology <GoTriangleDown/>
+            </li>
+          {openCohomology ? <CohomologyDropDown /> : <></>}
+          </div>
+
+          <div className='relative hover:bg-gray-700 hover:rounded-2xl'  onMouseLeave={()=> setOpenPhysics(false)}>
+            <li className='flex gap-0.5 p-5' onMouseEnter={()=> setOpenPhysics(true)}>
+                Mathematical Physics <GoTriangleDown/>
+            </li>
+          {openPhysics ? <PhysicsDropDown /> : <></>}
           </div>
         </ul>
+        <a className='hidden'>< GiHamburgerMenu /></a>
       </nav>
     </div>
   );
